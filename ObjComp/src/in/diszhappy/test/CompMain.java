@@ -15,6 +15,12 @@ import in.diszhappy.service.EmployeeService;
  *
  */
 public class CompMain {
+	/**
+	 * 
+	 * Created By Saumm on 16-Oct-2018
+	 * Desc : Execution will start from this method
+	 * @return main
+	 */
 	public static void main(String[] args) {
 		List<Employee> employees = EmployeeService.getEmployees();
 		try {

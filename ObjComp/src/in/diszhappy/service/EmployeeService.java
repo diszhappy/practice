@@ -13,7 +13,7 @@ import in.diszhappy.bean.Employee;
 /**
  * 
  * @author Saumm on 16-Oct-2018 11:38:47 PM
- * This Class is created for : 
+ * This Class is created to hold the service methods for Employee Bean 
  *
  */
 public class EmployeeService {
@@ -23,7 +23,12 @@ public class EmployeeService {
 	private EmployeeService() {
 		
 	}
-	
+	/**
+	 * 
+	 * Created By Saumm on 16-Oct-2018
+	 * Desc : This method is responsible to create a list of Employee object. Initialy it's hard coded later it will be pulled from database
+	 * @return getEmployees : The list of employee objects
+	 */
 	public static List<Employee> getEmployees(){
 		List<Employee> employees = new ArrayList<>();
 		Employee e1 = new Employee("Jack", "AXCDO0012P", "jack@gmail.com", "CGO", true, "Chicago", "USA", "USA");

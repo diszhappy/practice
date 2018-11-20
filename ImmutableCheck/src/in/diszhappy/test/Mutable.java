@@ -1,9 +1,13 @@
 package in.diszhappy.test;
+
+import java.util.logging.Logger;
+
 /**
  * @author Saumm created on 24-Oct-2018 11:48:07 PM 
  * Desc : This class is written to illustrate breaking the immutability of ImmutableBreakble object
  */
 public class Mutable extends ImmutableBreakble {
+	private static final Logger LOGGER = Logger.getLogger(Mutable.class.getName());
      private int realValue;
      /**
       * Default parameterized constructor
@@ -14,7 +18,7 @@ public class Mutable extends ImmutableBreakble {
 
          realValue = value;
      }
-     
+     @Override
      public int getValue() {
          return realValue;
      }
@@ -29,9 +33,9 @@ public class Mutable extends ImmutableBreakble {
       */
     public static void main(String[] arg){
         Mutable obj = new Mutable(4);
-        ImmutableBreakble immObj = (ImmutableBreakble)obj;              
-        System.out.println(immObj.getValue());
+        ImmutableBreakble immObj = obj;              
+        LOGGER.info(""+immObj.getValue());
         obj.setValue(8);
-        System.out.println(immObj.getValue());
+        LOGGER.info(""+immObj.getValue());
     }
 }

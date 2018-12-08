@@ -20,9 +20,9 @@ public class EmployeeService {
 	public static List<Employee> getEmployees(){
 		List<Employee> employees = new ArrayList<>();
 		
-		Employee e1 = new Employee("Subbhra Simantinee", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
-		Employee e2 = new Employee("Sugyani Satapathy", "AXCD1992P", "ss@gmail.com", "NGR", true, "Odisha", "India", "India");
-	Employee e3 = new Employee("Subbhra Simantinee", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
+		Employee e1 = new Employee("test", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
+		Employee e2 = new Employee("test2", "AXCD1992P", "ss@gmail.com", "NGR", true, "Odisha", "India", "India");
+	Employee e3 = new Employee("test", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
 		
 		employees.add(e1);
 		employees.add(e2);

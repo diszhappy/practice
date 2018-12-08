@@ -35,11 +35,10 @@ public class GenericCompare {
 		Field[] fields = oldObj.getClass().getDeclaredFields();
 		for (Field f : fields) {
 			f.setAccessible(true);
-			if (f.get(newObj) != null && !f.get(newObj).equals(f.get(oldObj)))
+			if (f.get(newObj) != null && !f.get(newObj).equals(f.get(oldObj))) {
 				diffMap.put(f.getName(), f.get(newObj) + "#" + f.get(oldObj));
-
+			}
 		}
 		return diffMap;
 	}
-
 }

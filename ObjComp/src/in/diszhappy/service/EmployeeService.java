@@ -22,7 +22,7 @@ public class EmployeeService {
 		
 		Employee e1 = new Employee("test", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
 		Employee e2 = new Employee("test2", "AXCD1992P", "ss@gmail.com", "NGR", true, "Odisha", "India", "India");
-	Employee e3 = new Employee("test", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
+	Employee e3 = new Employee("test2", "AXCDO0012P", "ss@gmail.com", "CTC", true, "Odisha", "India", "India");
 		
 		employees.add(e1);
 		employees.add(e2);

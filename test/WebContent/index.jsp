@@ -56,7 +56,7 @@
 											html += '		<span> Desc : </span> <span> <a href="#" onclick="showDetails('
 													+ value.id
 													+ ')">'
-													+ value.login
+													+ value.name
 													+ '</a></span>'
 											html += '	</div>'
 											html += '</div>'
@@ -80,9 +80,9 @@
 		});
 		console.log(JSON.stringify(p));
 		$("#login").text(p.id);
-		$("#type").text(p.login);
-		$("#user").text(p.site_admin);
-		$("#orgurl").text(p.html_url);
+		$("#type").text(p.name);
+		$("#user").text(p.dept);
+		$("#orgurl").text(p.address);
 		$("#detail-view").show();
 
 	}
